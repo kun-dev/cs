@@ -14,3 +14,7 @@ class Node {
     public Node[] children;
 }
 ```
+
+## Binary Tree
+A binary tree is a tree in which each node has **up to** two children. Not all trees are binary trees. For example, this tree is not a binary tree.
+![Not a binary tree](image/no_binary_tree.jpg "Not a Binaray Tree")
