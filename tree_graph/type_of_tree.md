@@ -40,3 +40,18 @@ A tree is balanced only if:
 ![Balanced Binary Tree](image/balanced_binary2.jpg)
 
 Two common types of balanced trees are red-black trees and AVL trees.
+
+## Complete Binary Tree
+A complete binary tree is a binary tree in which every level of the tree is fullly filled, except for perhaps the last level. To the extent that the last level is filled, it is filled **left to right**.
+
+![Complete Tree](image/complete_tree.jpg)
+
+## Full Binary Tree
+A full binary tree is a binary tree in which every node has either zero or two children. That is, no nodes have only one child.
+
+![Full Tree](image/full_binary.jpg)
+
+## Perfect Binary Tree
+A perfect binary tree is one that is both full and complete. All leaf nodes will be at the same level, and this level has the maximum number of nodes.
+
+![Perfect Tree](image/perfect_binary.jpg)
