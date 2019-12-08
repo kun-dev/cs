@@ -37,6 +37,6 @@ A tree is balanced only if:
 - the left subtree is balanced, AND
 - the right subtree is balanced
 
-![Balanced Binary Tree](image/balanced_binary.jpg)
+![Balanced Binary Tree](image/balanced_binary2.jpg)
 
 Two common types of balanced trees are red-black trees and AVL trees.
