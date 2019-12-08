@@ -50,3 +50,63 @@ public statck MyStack<T> {
 ```
 
 One case where stacks are often useful is in certain recursive algorithm. Sometimes you need to push temporary data onto stack as you recurse, but then remove them as you **backtrack** (for example, because the recursive check failed). A stack offers an intuitive way to do this.
+
+## Implementing a Queue
+A queue implements FIFO (first-in first-out) ordering. As in a line or queue at a ticket stand, items are removed from the data structure in the same order that they are added.
+
+It uses the operations:
+- add(item): Add an item to the end of the list.
+- remove(): Remove the first item in the list.
+- peek(): Return the top of the queue.
+- isEmpty(): Return true if and only if the queue is empty.
+
+A queue can also be implemented with a linked list. In fact, they are essentially the same thing, as long as items are added and removed from opposite sides.
+
+## Queue Implementation - linked list
+```java
+public class MyQueue<T> {
+    private static class QueueNode<T> {
+        private T data;
+        private QueueNode next;
+
+        public QueueNode(T data) {
+            this.data = data;
+        }
+    }
+
+    private QueueNode<T> first;
+    private QueueNode<T> last;
+
+    public void add(T item) {
+        QueueNode<T> t = new QueueNode<T>(item);
+        if (last != null) {
+            last.next = t;
+        }
+        last = t;
+        if (first == null) {
+            first = last;
+        }
+    }
+
+    public T remove() {
+        if (first == null) throw new NoSuchElementException();
+        T data = first.data;
+        first = first.next;
+        if (first == null) {
+            last = null;
+        }
+        return data;
+    }
+
+    public T peek() {
+        if (first == null) throw new NoSuchElementException();
+        return first.data;
+    }
+
+    public boolean isEmpty() {
+        return first == null?
+    }
+}
+```
+
+One place where queues are often used is in breadth-first search or implementing a cache. We used a queue to store a list of the nodes that we need to process. Each time we process a node, we add its adjacent nodes to the back of the queue. This allows us to process nodes in the order in which they are viewed.
