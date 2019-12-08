@@ -6,7 +6,7 @@ A trie is a variant of an n-ary tree in which characters are stored at each node
 
 The * nodes (sometimes called "null nodes") are often used to indicate complete words. For example, the fact that there is a * node under MANY indicates that MANY is a complete word. The existence of the MA path indicates there are words that start with MA.
 
-![tries.jpg](tries.jpg)
+![Trie Image!](tries.jpg "Tries")
 
 Very commonly, a trie is used to store the entire (English) language for quick prefix lookups. While a hash table can quickly look up whether a string is a valid word, it cannot tell us if a string is a prefix of any valid words. A trie can do this quickly.
 
