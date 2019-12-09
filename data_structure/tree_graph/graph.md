@@ -35,6 +35,7 @@ An adjacency matrix is an NxN boolean matrix (where N is the number of nodes), w
 In an undirected graph, an adjacency matrix will be symmetric. In a directed graph, it will not (necessarilly) be.
 
 ![Graph](image/graph2.jpg)
+
 ||0|1|2|3|
 |-|-|-|-|-|
 |0|0|1|0|0|
