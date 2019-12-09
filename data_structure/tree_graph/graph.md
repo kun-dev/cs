@@ -42,4 +42,5 @@ In an undirected graph, an adjacency matrix will be symmetric. In a directed gra
 |1|0|0|1|0|
 |2|1|0|0|0|
 |3|0|0|1|0|
+
 The same graph algorithms that are used on adjacency lists (breath-first search, etc.) can be performed with adjacency matrices, but they may be somewhat less efficient. In the adjacency list representation, you can easily iterate through the neighbors of a node. In the adjacency matrix representation, you will need to iterate through all the nodes to identify a node's neighbors.
